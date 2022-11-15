@@ -9,12 +9,13 @@ function Landing(props) {
 
   const landingClasses = ["landing"];
 
-  const videoClasses = ["video"];
-  const { videoAutoPlay, videoMuted, videoLoop } = {
-    autoplay: usePrefersReducedMotion(),
-    muted: false,
-    loop: true,
-  };
+  const videoContainerClasses = ["video"];
+  const videoClasses = [];
+  let [videoAutoPlay, videoMuted, videoLoop, videoControls] = [!usePrefersReducedMotion(), true, true, false];
+
+  console.log({ videoAutoPlay, videoMuted, videoLoop });
+
+  const videoInterfaceClasses = ["video-overlay"];
 
   let textClasses = ["text-container"];
   let textInnerClasses = ["text-inner"];
@@ -28,11 +29,16 @@ function Landing(props) {
     // Screen ratio is too large for video
     if (width / height > 4096 / 2160) {
       landingClasses.push("flex");
-      videoClasses.push("fg");
+      videoContainerClasses.push("fg");
+      videoClasses.push("fg")
+      videoAutoPlay = false;
+      videoControls = true;
     } else {
       textClasses = ["overlay-container"];
       textInnerClasses = ["overlay"];
-      videoClasses.push("bg");
+      videoContainerClasses.push("bg");
+      videoClasses.push("bg")
+      videoInterfaceClasses.push("hidden");
     }
 
     // Small screens
@@ -42,11 +48,18 @@ function Landing(props) {
   }
 
   return (
-    <section className={landingClasses.join(" ")}>
-      {/* TODO don't play the video if prefers reduced motion */}
-      <video autoPlay={videoAutoPlay} muted={videoMuted} loop={videoLoop} className={videoClasses.join(" ")}>
-        <source src={video} type="video/mp4" />
-      </video>
+    <section id="landing" className={landingClasses.join(" ")}>
+      <div className={videoContainerClasses.join(" ")}>
+        <video
+          autoPlay={videoAutoPlay}
+          muted={videoMuted}
+          loop={videoLoop}
+          controls={videoControls}
+          className={videoClasses.join(" ")}
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+      </div>
 
       <div className={textClasses.join(" ")}>
         <div className={textInnerClasses.join(" ")}>{props.children}</div>

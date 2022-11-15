@@ -16,9 +16,14 @@
 
 
 /* System-wide styles */
+* {
+  margin: 0;
+}
+
 html {
   background-color: #fafafa;
   font-family: "Lato", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,12 +37,13 @@ code {
 }
 
 h1 {
-  font-size: calc(2em + 3vw);
-  margin: 0;
+  font-size: calc(2em + 4vmin);
+  margin: 0 0 0.5em 0;
 }
 
 p {
-  font-size: calc(0.5em + 1vw);
+  font-size: calc(0.5em + 2vmin);
+  font-family: 'Sono';
 }
 
 

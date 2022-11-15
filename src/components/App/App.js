@@ -2,19 +2,34 @@ import "./App.css";
 import Header from "../Header";
 import Landing from "../Landing";
 import Footer from "../Footer";
-import Experience from "../Experience/Experience";
+import About from "../About";
+import Join from "../Join";
+
+// TODO
+// Mobile horizontal css
+// Hamburger menu animation
+// Hamburger menu functionality
+// Join section
+// Footer
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Landing>
-        <h1>Big Quote Here</h1>
+        <h1>
+          Save time.
+          <br />
+          Save money.
+          <br />
+          Eat well.
+        </h1>
         <p>
-          <em>small quote here</em>
+          <em>Learn to cook authentic meals with an experienced chef.</em>
         </p>
       </Landing>
-      <Experience />
+      <About />
+      <Join />
       <Footer />
     </div>
   );

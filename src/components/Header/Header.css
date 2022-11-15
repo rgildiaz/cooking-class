@@ -49,6 +49,11 @@ header {
     margin: 0.25em;
 }
 
+.logo:visited {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
 /* Nav menu (deprecated) */
 header nav {
     display: flex;
