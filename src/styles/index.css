@@ -1,0 +1,47 @@
+/* Fonts */
+@font-face {
+  font-family: "Garamond";
+  src: url("../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Sono";
+  src: url("../assets/fonts/Sono/Sono-VariableFont_MONO\,wght.ttf");
+}
+
+
+/* System-wide styles */
+html {
+  background-color: #fafafa;
+  font-family: "Lato", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1 {
+  font-size: calc(2em + 3vw);
+  margin: 0;
+}
+
+p {
+  font-size: calc(0.5em + 1vw);
+}
+
+
+/* Helper classes */
+.hidden {
+  display: none !important;
+}

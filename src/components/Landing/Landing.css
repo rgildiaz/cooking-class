@@ -1,0 +1,67 @@
+/* Default style is background video */
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.landing.flex {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Style a hero background video */
+.video.bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 100vh;
+  z-index: -3;
+}
+
+/* Style the foreground video */
+.video.fg {
+  position: relative;
+  max-width: 60%;
+  width: auto;
+  height: calc(100% - 6em);
+  margin: 0 3em;
+}
+
+/* Text styles when video is in foreground */
+.text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 3em;
+}
+
+.text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Add some content at the bottom of the video/page */
+.overlay-container {
+  position: absolute;
+  bottom: calc(50vh - 5em);
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+  /* background: rgba(0, 0, 0, 0.5); */
+  width: fit-content;
+  padding: 2em 8em;
+}

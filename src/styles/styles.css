@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Garamond";
+    src: url("../../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+}
+
+html {
+    background-color: white;
+    font-family: 'Garamond', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.relative {
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.landing h1 {
+    font-size: 5em;
+    margin-top: 15vh;
+}
+
+.recipe .left-side .image {
+    position: relative;
+    max-width: fit-content;
+    z-index: -1;
+}
+
+.landing .left-side .image img {
+    width: auto;
+    height: 100%;
+}
+
+.landing .left-side .image figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    background-color: rgba(127, 127, 127, 0.657);
+}
+
+.recipe {
+    display: flex;
+    align-items: flex-start;
+    padding: calc(3vmin + 1em);
+}
+
+.recipe > div {
+    margin: calc(1vmin + 0.5em);
+}
+
+.recipe .image {
+    position: relative;
+    flex-basis: 60%;
+    z-index: -1;
+}
+
+.recipe .image img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe .image figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1em; 
+    background-color: rgba(127, 127, 127, 0.657);
+}
+
+.recipe .text {
+    flex-basis: 100%;
+}
+
+.recipe .text.left h2,
+.recipe .text.left h3 {
+    text-align: left;
+}
+
+.recipe .text.right h2,
+.recipe .text.right h3 {
+    text-align: right;
+}
