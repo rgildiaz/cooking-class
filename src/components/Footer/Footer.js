@@ -1,9 +1,13 @@
+import "./Footer.css";
+
 function Footer(props) {
-    return (
-        <footer>
-            &copy; Lisa Gil Diaz 2022
-        </footer>
-    )
+  return (
+    <div className="footer-container">
+      <footer>
+        <p>2022</p>
+      </footer>
+    </div>
+  );
 }
 
 export default Footer;

@@ -16,6 +16,7 @@ header {
     margin: 0 auto;
 }
 
+/* Menu Icon */
 .menu-icon {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -42,11 +43,13 @@ header {
     transition-delay: 100ms;
 }
 
+/* Logo */
 .logo {
     font-size: calc(1em + 3vmin);
     margin: 0.25em;
 }
 
+/* Nav menu (deprecated) */
 header nav {
     display: flex;
     flex-direction: row;
