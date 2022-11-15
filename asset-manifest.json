@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cooking-class/static/css/main.4fc29cf9.css",
-    "main.js": "/cooking-class/static/js/main.400e8d0a.js",
+    "main.css": "/cooking-class/static/css/main.cf3a0682.css",
+    "main.js": "/cooking-class/static/js/main.99bd0c6b.js",
     "static/media/test.mp4": "/cooking-class/static/media/test.2fc0d75426f3757da2e5.mp4",
     "static/media/CormorantGaramond-Regular.ttf": "/cooking-class/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
     "static/media/Sono-VariableFont_MONO,wght.ttf": "/cooking-class/static/media/Sono-VariableFont_MONO,wght.7a22cc32848e63161a2d.ttf",
     "static/media/Lato-Regular.ttf": "/cooking-class/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "index.html": "/cooking-class/index.html",
-    "main.4fc29cf9.css.map": "/cooking-class/static/css/main.4fc29cf9.css.map",
-    "main.400e8d0a.js.map": "/cooking-class/static/js/main.400e8d0a.js.map"
+    "main.cf3a0682.css.map": "/cooking-class/static/css/main.cf3a0682.css.map",
+    "main.99bd0c6b.js.map": "/cooking-class/static/js/main.99bd0c6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fc29cf9.css",
-    "static/js/main.400e8d0a.js"
+    "static/css/main.cf3a0682.css",
+    "static/js/main.99bd0c6b.js"
   ]
 }
