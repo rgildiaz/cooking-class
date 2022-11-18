@@ -1,4 +1,4 @@
-.footer-container {
+.mockup1 .footer-container {
     margin-top: 5em;
     width: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-footer {
+.mockup1 footer {
     width: calc(100% - 3rem);
     height: fit-content;
     display: flex;
@@ -18,6 +18,6 @@ footer {
     padding: 2em; 
 }
 
-footer p {
+.mockup1 footer p {
     font-size: calc(0.25em + 1vmin);
 }
