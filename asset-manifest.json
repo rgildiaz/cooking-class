@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cooking-class/static/css/main.0ef7fcf4.css",
+    "main.css": "/cooking-class/static/css/main.15f87b7e.css",
     "main.js": "/cooking-class/static/js/main.6347b915.js",
     "static/media/CormorantGaramond-Regular.ttf": "/cooking-class/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
     "static/media/Sono-VariableFont_MONO,wght.ttf": "/cooking-class/static/media/Sono-VariableFont_MONO,wght.7a22cc32848e63161a2d.ttf",
     "static/media/landing.jpeg": "/cooking-class/static/media/landing.7f0486c206cdf51bf005.jpeg",
     "static/media/Lato-Regular.ttf": "/cooking-class/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "index.html": "/cooking-class/index.html",
-    "main.0ef7fcf4.css.map": "/cooking-class/static/css/main.0ef7fcf4.css.map",
+    "main.15f87b7e.css.map": "/cooking-class/static/css/main.15f87b7e.css.map",
     "main.6347b915.js.map": "/cooking-class/static/js/main.6347b915.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ef7fcf4.css",
+    "static/css/main.15f87b7e.css",
     "static/js/main.6347b915.js"
   ]
 }
