@@ -41,12 +41,30 @@ h1 {
   margin: 0 0 0.5em 0;
 }
 
+h2 {
+  font-size: calc(1.5em + 2vmin);
+  margin: 0 0 1em 0;
+}
+
+p, em {
+  font-size: calc(0.5em + 1.5vmin);
+}
+
 p {
-  font-size: calc(0.5em + 2vmin);
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.section {
+  margin-bottom: 8em;
 }
 
 
 /* Helper classes */
 .hidden {
   display: none !important;
+}
+
+.container {
+  position: relative !important;
 }

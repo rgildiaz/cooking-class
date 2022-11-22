@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: none;
+    margin-bottom: 1em;
+    height: fit-content;
+}
+
+header * {
+    margin: 0 1em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+header nav link {
+    margin: 0 1em;
+}

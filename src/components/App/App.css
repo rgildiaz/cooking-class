@@ -1,6 +1,42 @@
-.mockup1 {
-  text-align: center;
+.App {
+  text-align: left;
   height: fit-content;
   position: relative;
-  font-family: "Lato";
+  font-family: "Garamond";
+  display: grid;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 65% auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". page .";
+}
+
+.page {
+  grid-area: page;
+  animation: fadeInAnimation ease 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: relative;
+  min-height: 100vh;
+}
+
+a:hover {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+}
+
+a:visited {
+  color: black;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }

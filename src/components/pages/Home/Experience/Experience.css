@@ -1,0 +1,34 @@
+.experience {
+    min-height: 100vh;
+    height: fit-content;
+    /* padding: 0 5em; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 8em;
+}
+
+.section-image {
+    align-items: flex-end;
+    justify-content: center;
+    width: fit-content;
+}
+
+.section-image img {
+    margin-top: 5em;
+    max-height: 100%;
+    max-width: calc(5em + 30vmax);
+    min-width: calc(5em + 20vmax);
+    min-height: calc(5em + 30vmax);
+    height: auto;
+    width: auto;
+    border: 1px solid gray;
+}
+
+.section-text {
+    justify-content: center;
+    /* padding: 0 calc(4em + 3vw) 0 calc(2em + 1vw) */
+    padding: 0 calc(2em + 1vw) 0 0;
+}
