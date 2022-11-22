@@ -7,7 +7,7 @@ export default function Header(props) {
     <header>
       <Link href="/" className="logo"><h2>Logo</h2></Link>
       <nav>
-        <Link href="/recipes/">recipes</Link>
+        {/* <Link href="/recipes/">recipes</Link> */}
         <Link href="/sign-up/">sign up</Link>
         <Link href="/contact/">contact</Link>
       </nav>

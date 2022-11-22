@@ -9,7 +9,7 @@ export default function Landing(props) {
       </div>
       <div className="landing-title container">
         <h1>This is the title</h1>
-        <em>This is a very long and interesting quote which says something profound or meaningful.</em>
+        <em>This is a very long and interesting quote that says something profound or meaningful.</em>
       </div>
     </section>
   );

@@ -1,7 +1,0 @@
-#home::after {
-    content: "༻ * ༺";
-    width: 100%;
-    position: absolute;
-    bottom: -5em;
-    text-align: center;
-}
