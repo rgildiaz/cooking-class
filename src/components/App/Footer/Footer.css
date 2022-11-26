@@ -1,0 +1,32 @@
+footer {
+  margin-top: 2em;
+  height: 10em;
+  display: grid;
+  grid-template-columns: auto calc(50vw + 10em) auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". content .";
+  position: relative;
+}
+
+footer::before {
+  content: "༻ * ༺";
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  text-align: center;
+}
+
+.footer-inner {
+  grid-area: content;
+  background-color: #f0f0f0;
+  border-radius: 7px 7px 0 0;
+  font-family: 'Sono';
+  padding: 4em 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-inner p {
+  font-size: 14px;
+}
