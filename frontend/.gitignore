@@ -12,7 +12,8 @@
 /coverage
 
 # production
-/build
+# Django needs to see the build files
+# /build
 
 # misc
 .DS_Store

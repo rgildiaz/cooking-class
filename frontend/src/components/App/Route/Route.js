@@ -20,8 +20,7 @@ const Route = ({ path, children }) => {
         };
     }, [])
 
-    // TODO
-    return currentPath === "/cooking-class" + path
+    return currentPath === path
     ? children
     : null;
 }

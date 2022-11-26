@@ -1,9 +1,6 @@
 import React from "react";
 
 const Link = ({ className, href, children }) => {
-
-  // TODO
-  href = "/cooking-class" + href;
   
   const onClick = (event) => {
     // if ctrl or meta key are held on click, allow default behavior of opening link in new tab
