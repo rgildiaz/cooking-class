@@ -1,23 +1,29 @@
 .experience {
     min-height: 100vh;
     height: fit-content;
-    /* padding: 0 5em; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
     margin-bottom: 8em;
 }
 
+.section-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 .section-image {
-    align-items: flex-end;
-    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: fit-content;
 }
 
 .section-image img {
-    margin-top: 5em;
     max-height: 100%;
     max-width: calc(5em + 30vmax);
     min-width: calc(5em + 20vmax);
@@ -29,6 +35,21 @@
 
 .section-text {
     justify-content: center;
-    /* padding: 0 calc(4em + 3vw) 0 calc(2em + 1vw) */
     padding: 0 calc(2em + 1vw) 0 0;
+}
+
+@media (max-width: 700px) {
+    .section-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .section-image {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .section-text {
+        padding: 0;
+    }
 }

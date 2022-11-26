@@ -33,3 +33,35 @@
   /* padding: 0 calc(4em + 3vw) 0 calc(2em + 1vw) */
   padding: 0 0 0 calc(2em + 1vw);
 }
+
+@media (max-width: 700px) {
+  .landing {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .container {
+    padding: 0;
+    align-items: center;
+  }
+
+  .landing-title {
+    height: fit-content;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .landing-title h1 {
+    margin: 1rem 2rem 1rem;
+  }
+
+  .landing-title em {
+    margin: 0 3rem;
+    text-align: center;
+  }
+
+  .landing-image img {
+    max-height: calc(60vh);
+    max-width: 100%;
+  }
+}
