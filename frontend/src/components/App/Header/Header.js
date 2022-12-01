@@ -9,7 +9,7 @@ export default function Header(props) {
       <nav>
         {/* <Link href="/recipes/">recipes</Link> */}
         <Link href="/sign-up/">sign up</Link>
-        <Link href="/contact/">contact</Link>
+        {/* <Link href="/contact/">contact</Link> */}
       </nav>
     </header>
   );

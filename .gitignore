@@ -3,3 +3,9 @@ venv
 
 # secrets!
 secret.py
+
+# docker
+compose-dev.yaml
+
+# vscode
+cooking-class.code-workspace

@@ -22,7 +22,7 @@ header nav {
     align-items: flex-end;
 }
 
-header nav link {
+header nav a {
     margin: 0 1em;
 }
 
@@ -30,5 +30,12 @@ header nav link {
     header {
         position: relative;
         margin-bottom: 2rem;
+    }
+
+    header nav a {
+        border-radius: 20px;
+        background-color: lightgray;
+        padding: 0.5em 1em;
+        text-decoration: none;
     }
 }
