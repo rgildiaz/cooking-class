@@ -1,8 +1,9 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import YearSerializer
+from .serializers import AvailabilitySerializer, YearSerializer
 from .models import Year
+from .models import Availability
 from django.shortcuts import render
 
 # Create your views here.
@@ -38,3 +39,17 @@ def year_detail(request, pk):
     if request.method == 'DELETE':
         year.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+def availibility(request):
+
+    if request.method == 'GET':
+        availability = Availability.objects.all()
+        serializer = AvailabilitySerializer(availability, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = AvailabilitySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
