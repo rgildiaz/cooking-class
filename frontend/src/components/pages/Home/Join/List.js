@@ -7,9 +7,19 @@ function List(props) {
   //   props.deletion(props.id);
   // }
 
+  const courseStyles = {
+    margin: "1em",
+    width: "100%",
+    textAlign: "left",
+    padding: "0.5em 1em",
+    backgroundColor: "lightgray",
+    borderRadius: "10px"
+  };
+
   return (
-    <div className="course">
-      <h1>{props.title}</h1>
+    <div className="course" style={{ ...courseStyles }}>
+      <h3>{props.title}</h3>
+      <p>{props.desc}</p>
       {/* <button onClick={handleClick}>Delete</button> */}
     </div>
   );

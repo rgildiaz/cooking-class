@@ -6,14 +6,16 @@ export default function Course() {
   /**
    * Returns a List component containing Course information.
    */
+  const [c, setC] = useState(null);
   const [courses, setNewCourses] = useState(null);
   const [formCourse, setFormCourse] = useState({
     title: "",
-    content: "",
+    date: "",
   });
 
   useEffect(() => {
     getCourses();
+    getC()
   }, []);
 
   function getCourses() {
@@ -34,12 +36,31 @@ export default function Course() {
       });
   }
 
+  function getC() {
+    axios({
+      method: "GET",
+      url: "/c/",
+    })
+      .then((response) => {
+        const data = response.data;
+        console.log(data);
+        setC(data);
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        }
+      });
+  }
+
   function createCourse(event) {
     axios({
       method: "POST",
       url: "/courses/",
       data: {
-        course: formCourse.course,
+        course: formCourse.title,
       },
     }).then((response) => {
       getCourses();
@@ -70,15 +91,16 @@ export default function Course() {
   }
 
   return (
-    <div className="course">
+    <>
       {/* <form className="create-course">
         <input onChange={handleChange} text={formCourse.course} name="course" placeholder="Course" value={formCourse.course} />
         <button onClick={createCourse}>Create Course</button>
       </form> */}
+      {console.log(courses)}
       {courses &&
         courses.map((course) => (
-          <List key={course.course_id} id={course.course_id} course={course.title} deletion={DeleteCourse} />
+          <List key={course.course_id} id={course.course_id} title={"test"} desc={"te"} deletion={DeleteCourse} />
         ))}
-    </div>
+    </>
   );
 }

@@ -49,3 +49,9 @@ form button {
     border: 1px solid gray;
     font-family: 'Garamond';
 }
+
+@media (max-width: 700px) {
+    #contact .content {
+        flex-wrap: wrap;
+    }
+}
