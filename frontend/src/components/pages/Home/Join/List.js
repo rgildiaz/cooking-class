@@ -9,10 +9,10 @@ function List(props) {
 
   const courseStyles = {
     margin: "1em",
-    width: "100%",
+    width: "80%",
     textAlign: "left",
-    padding: "0.5em 1em",
-    backgroundColor: "lightgray",
+    padding: "1em",
+    backgroundColor: "#ececec",
     borderRadius: "10px"
   };
 

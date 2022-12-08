@@ -15,7 +15,7 @@ export default function Course() {
 
   useEffect(() => {
     getCourses();
-    getC()
+    getC();
   }, []);
 
   function getCourses() {
@@ -43,7 +43,7 @@ export default function Course() {
     })
       .then((response) => {
         const data = response.data;
-        console.log(data);
+        // console.log(data);
         setC(data);
       })
       .catch((error) => {
@@ -96,10 +96,10 @@ export default function Course() {
         <input onChange={handleChange} text={formCourse.course} name="course" placeholder="Course" value={formCourse.course} />
         <button onClick={createCourse}>Create Course</button>
       </form> */}
-      {console.log(courses)}
+      {courses && courses.map((course) => (console.log(course)))}
       {courses &&
         courses.map((course) => (
-          <List key={course.course_id} id={course.course_id} title={"test"} desc={"te"} deletion={DeleteCourse} />
+          <List key={course.course_id} id={course.course_id} title={course.course_name} desc={course.course_intro} deletion={DeleteCourse} />
         ))}
     </>
   );

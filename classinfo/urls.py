@@ -20,8 +20,8 @@ from core.views import front, availability, availability_detail, course, course_
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", front, name="front"),
-    path("courses/", availability, name="course"),
-    path("courses/<int:pk>/", availability_detail, name="detail"),
+    path("courses/", course, name="course"),
+    path("courses/<int:pk>/", course_detail, name="detail"),
     # I realize that this is horrible naming convention, will fix later.
     path("c/", course, name="c"),
     path("c/<int:pk>/", course_detail, name="detail")
