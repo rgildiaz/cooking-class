@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cooking-class/static/css/main.2dda43fe.css",
-    "main.js": "/cooking-class/static/js/main.65db471e.js",
-    "static/media/CormorantGaramond-Regular.ttf": "/cooking-class/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
-    "static/media/Sono-VariableFont_MONO,wght.ttf": "/cooking-class/static/media/Sono-VariableFont_MONO,wght.7a22cc32848e63161a2d.ttf",
-    "static/media/landing.jpeg": "/cooking-class/static/media/landing.7f0486c206cdf51bf005.jpeg",
-    "static/media/Lato-Regular.ttf": "/cooking-class/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
-    "index.html": "/cooking-class/index.html",
-    "main.2dda43fe.css.map": "/cooking-class/static/css/main.2dda43fe.css.map",
-    "main.65db471e.js.map": "/cooking-class/static/js/main.65db471e.js.map"
+    "main.css": "./static/css/main.57f63791.css",
+    "main.js": "./static/js/main.649803a0.js",
+    "static/media/CormorantGaramond-Regular.ttf": "./static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
+    "static/media/Sono-VariableFont_MONO,wght.ttf": "./static/media/Sono-VariableFont_MONO,wght.7a22cc32848e63161a2d.ttf",
+    "static/media/landing.jpeg": "./static/media/landing.7f0486c206cdf51bf005.jpeg",
+    "static/media/Lato-Regular.ttf": "./static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "index.html": "./index.html",
+    "main.57f63791.css.map": "./static/css/main.57f63791.css.map",
+    "main.649803a0.js.map": "./static/js/main.649803a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dda43fe.css",
-    "static/js/main.65db471e.js"
+    "static/css/main.57f63791.css",
+    "static/js/main.649803a0.js"
   ]
 }
