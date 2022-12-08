@@ -1,12 +1,5 @@
 from rest_framework import serializers
-from .models import Year
-from .models import Month
-from .models import Day
-from .models import Style
-from .models import Course
-from .models import Learner
-from .models import Availability
-from .models import Registration
+from .models import Year, Month, Day, Style, Course, Learner, Availability, Registration
 
 class YearSerializer(serializers.ModelSerializer):
     class Meta:
@@ -41,7 +34,7 @@ class LearnerSerializer(serializers.ModelSerializer):
 class AvailabilitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Availability
-        fields = ('availability_id', 'year', 'month', 'day')
+        fields = ('availability_id', 'course', 'year', 'month', 'day')
 
 class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:

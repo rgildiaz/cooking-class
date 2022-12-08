@@ -28,5 +28,5 @@ footer::before {
 }
 
 .footer-inner p {
-  font-size: 14px;
+  font-size: calc(0.3em + 0.6vw);
 }

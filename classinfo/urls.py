@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import front, year, year_detail
+from core.views import front, availability, availability_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", front, name="front"),
-    path("years/", year, name="year"),
-    path("years/<int:pk>/", year_detail, name="detail"),
+    path("courses/", availability, name="course"),
+    path("courses/<int:pk>/", availability_detail, name="detail"),
 ]

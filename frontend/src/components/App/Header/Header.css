@@ -32,6 +32,10 @@ header nav a {
         margin-bottom: 2rem;
     }
 
+    a.home {
+        display: none;
+    }
+
     header nav a {
         border-radius: 20px;
         background-color: lightgray;

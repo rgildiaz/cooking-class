@@ -8,8 +8,8 @@ export default function Landing(props) {
         <img src={img} alt="A bowl of bibimbap" />
       </div>
       <div className="landing-title container">
-        <h1>This is the title.</h1>
-        <em>This is a very long and interesting quote that says something profound or meaningful.</em>
+        <h1>Eat healthy.<br />Live well.</h1>
+        <em>Learn to cook clean, authentic food with an experienced chef.</em>
       </div>
     </section>
   );

@@ -1,0 +1,51 @@
+#contact .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content .info {
+    width: 100%;
+    margin-left: 2em;
+}
+
+.location {
+    margin-top: 2em;
+}
+
+.location p {
+    margin: 0.2em 0;
+}
+
+.location .address {
+    margin: 0.5em 0 0.7em 0.5em;
+}
+
+/* Email form */
+form {
+    margin: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    width: calc(10em + 10vw);
+    min-width: 20vw;
+    max-width: 90vw;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 1em 2em
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #fafafa00;
+    font-family: 'Garamond';
+    font-size: 1em;
+    margin: 1em 0 ;
+    width: 100%;
+}
+
+form button {
+    border: 1px solid gray;
+    font-family: 'Garamond';
+}

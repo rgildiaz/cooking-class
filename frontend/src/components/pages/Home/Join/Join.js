@@ -1,5 +1,5 @@
+import Course from "./Course";
 import "./Join.css";
-import Year from "./Year";
 
 export default function Join(props) {
   return (
@@ -8,15 +8,7 @@ export default function Join(props) {
         <h2>Join a class</h2>
       </div>
       <div className="section-content">
-        <Year />
-        {/* <iframe
-          title="Calendar"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fafafa&ctz=America%2FChicago&showTitle=0&showPrint=0&showCalendars=0&mode=WEEK&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
-          width="800"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe> */}
+        <Course />
       </div>
     </section>
   );

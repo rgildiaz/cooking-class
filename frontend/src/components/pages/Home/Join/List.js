@@ -1,12 +1,16 @@
 function List(props) {
-  function handleClick() {
-    props.deletion(props.id);
-  }
+  /**
+   * Used by Course to display a Course entry.
+   */
+
+  // function handleClick() {
+  //   props.deletion(props.id);
+  // }
 
   return (
-    <div className="year">
-      <h1> Year: {props.year} </h1>
-      <button onClick={handleClick}>Delete</button>
+    <div className="course">
+      <h1>{props.title}</h1>
+      {/* <button onClick={handleClick}>Delete</button> */}
     </div>
   );
 }
