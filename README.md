@@ -1,11 +1,11 @@
 # cooking-class
 IS 446 Group Project website
 
-If you just want to run the site, use the instructions in [the Backend section](#backend).
+Use the instructions in [the backend section](#backend) if your only goal is to run the site locally.
 
 
 ## Frontend
-The frontend is built using React (and create-react-app). As a prerequisite, you will need to have [Node.js]() installed.
+The frontend is built using React (and create-react-app). As a prerequisite, you will need to have [Node.js](https://nodejs.org/en/) installed.
 
 If you don't have Node.js installed, you can still view the site through [the backend](#backend).
 
@@ -37,4 +37,16 @@ $ python3 manage.py runserver
 
 Django pulls from the React build files (located at ``./frontend/build``), so there is no need to run both the frontend and backend servers at the same time.
 
-**Note**: the Django secret key is _secret_, stored in a git-ignored file, ``secret.py``. If you have this file, place it in the root directory (``./cooking-class/``). Without it, the Django server will not run.
+### **Note**: 
+the Django secret key is _secret_, stored in a git-ignored file, ``secret.py``. If you have this file, place it in the root directory (``cooking-class``). Without it, the Django server will not run.
+
+### Data Model
+The backend data model is defined in ``./core/models.py``. If any changes are made to this model, migrate the changes using:
+```bash
+$ python3 manage.py migratechanges
+```
+
+Take a look at [the conceptual data model](./info/Cooking%20Class%20Conceptual%20Data%20Model.pdf) for a better idea of what the database looks like.
+
+## API
+The backend API is consumed using [``axios``](https://axios-http.com/). 
